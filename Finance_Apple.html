@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JSON Object Creation in JavaScript</h2>
+
+<p>
+id: <span id="id"></span><br>  
+t: <span id="t"></span><br> 
+e: <span id="e"></span><br> 
+l: <span id="l"></span><br> 
+lfix: <span id="lfix"></span><br>  
+lcurl: <span id="lcurl"></span><br> 
+s: <span id="s"></span><br> 
+ltt: <span id="ltt"></span><br> 
+lt: <span id="lt"></span><br>  
+ltdts: <span id="ltdts"></span><br> 
+c: <span id="c"></span><br> 
+cfix: <span id="cfix"></span><br> 
+cp: <span id="cp"></span><br>  
+cpfix: <span id="cpfix"></span><br> 
+ccol: <span id="ccol"></span><br> 
+pclsfix: <span id="pclsfix"></span><br> 
+el: <span id="el"></span><br>  
+elfix: <span id="elfix"></span><br> 
+elcurl: <span id="elcurl"></span><br> 
+elt: <span id="elt"></span><br> 
+ec: <span id="ec"></span><br>
+ecfix: <span id="ecfix"></span><br>
+ecp: <span id="ecp"></span><br>
+ecpfix: <span id="ecpfix"></span><br>
+eccol: <span id="eccol"></span><br>
+div: <span id="div"></span><br>
+yld: <span id="yld"></span><br>
+
+</p>  
+
+<script>
+
+var JSONObject = {
+   "id": "22144",
+   "t" : "AAPL",
+   "e" : "NASDAQ",
+   "l" : "635.38",
+   "l_fix" : "635.38",
+   "l_cur" : "635.38",
+   "s": "1",
+   "ltt":"3:59PM EDT",
+   "lt" : "May 29, 3:59PM EDT",
+   "lt_dts" : "2014-05-29T15:59:59Z",
+   "c" : "+11.37",
+   "c_fix" : "11.37",
+   "cp" : "1.82",
+   "cp_fix" : "1.82",
+   "ccol" : "chg",
+   "pcls_fix" : "624.01",
+   "el": "637.30",
+   "el_fix": "637.30",
+   "el_cur": "637.30",
+   "elt" : "May 30, 6:36AM EDT",
+   "ec" : "+1.92",
+   "ec_fix" : "1.92",
+   "ecp" : "0.30",
+   "ecp_fix" : "0.30",
+   "eccol" : "chg",
+   "div" : "3.29",
+   "yld" : "2.07"};
+
+document.getElementById("id").innerHTML=JSONObject.id;
+document.getElementById("t").innerHTML=JSONObject.t;
+document.getElementById("e").innerHTML=JSONObject.e;
+document.getElementById("l").innerHTML=JSONObject.l;
+document.getElementById("lfix").innerHTML=JSONObject.l_fix
+document.getElementById("lcurl").innerHTML=JSONObject.l_cur;
+document.getElementById("s").innerHTML=JSONObject.s;
+document.getElementById("ltt").innerHTML=JSONObject.ltt;
+document.getElementById("lt").innerHTML=JSONObject.lt;
+document.getElementById("ltdts").innerHTML=JSONObject.lt_dts;
+document.getElementById("c").innerHTML=JSONObject.c;
+document.getElementById("cfix").innerHTML=JSONObject.c_fix;
+document.getElementById("cp").innerHTML=JSONObject.cp;
+document.getElementById("cpfix").innerHTML=JSONObject.cp_fix;
+document.getElementById("ccol").innerHTML=JSONObject.ccol;
+document.getElementById("pclsfix").innerHTML=JSONObject.pcls_fix;
+document.getElementById("el").innerHTML=JSONObject.el;
+document.getElementById("elfix").innerHTML=JSONObject.el_fix;
+document.getElementById("elcurl").innerHTML=JSONObject.el_cur;
+document.getElementById("elt").innerHTML=JSONObject.elt;
+document.getElementById("ec").innerHTML=JSONObject.ec;
+document.getElementById("ecfix").innerHTML=JSONObject.ec_fix;
+document.getElementById("ecp").innerHTML=JSONObject.ecp;
+document.getElementById("ecpfix").innerHTML=JSONObject.ecp_fix;
+document.getElementById("eccol").innerHTML=JSONObject.eccol;
+document.getElementById("div").innerHTML=JSONObject.div;
+document.getElementById("yld").innerHTML=JSONObject.yld;
+
+</script>
+
+</body>
+</html>
+

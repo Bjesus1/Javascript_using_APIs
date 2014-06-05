@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var z;
+function loadXMLDoc()
+{
+  xmlhttp=new XMLHttpRequest();
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    	var x = xmlhttp.responseText;
+    	console.log(x);
+    	z = xmlhttp.responseText;
+        var strArray = x.split('\n');
+
+       for(i=0;((strArray.length)-1)> i; i++){
+
+    	var strArrayParts =  strArray[i];
+    	var strArrayPartsx = strArrayParts.split(',');
+    	
+    document.getElementById("stock_name" + i).innerHTML=( strArray[i] );
+
+                           
+if(i==0){
+        for(h=0; h<strArrayPartsx.length; h++){
+    
+    document.getElementById("stock"+h).innerHTML=( strArrayPartsx[h] );
+    
+                                              }                       
+
+}else if(i==1){
+        for(a=0; a<strArrayPartsx.length; a++){
+    
+    document.getElementById("stockp"+a).innerHTML=( strArrayPartsx[a] );
+    
+                                              }  
+
+}else{
+    alert("ERRO");
+}
+
+    }
+    }
+  }
+xmlhttp.open("GET","http://finance.yahoo.com/d/quotes.csv?s=RHT+MSFT&f=sb2b3jk",true);
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
+
+<center><h2>Using the XML Http Request</h2></center>
+
+
+<center><button type="button" onclick="loadXMLDoc()">Change Content</button></center>
+<div id="stock_name0"></div>
+<div id="stock_name1"></div>
+
+<br>
+
+<div id="stock0"></div>
+<div id="stock1"></div>
+<div id="stock2"></div>
+<div id="stock3"></div>
+<div id="stock4"></div>
+
+<br>
+
+<div id="stockp0"></div>
+<div id="stockp1"></div>
+<div id="stockp2"></div>
+<div id="stockp3"></div>
+<div id="stockp4"></div>
+
+
+</body>
+</html>
